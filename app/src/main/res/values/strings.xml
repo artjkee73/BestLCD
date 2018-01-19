@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BestLCD</string>
+
+    <!--item_main_menu-->
+
+    <string name="game_item_menu">Игровой</string>
+    <string name="best_price_item_menu">Лучший</string>
+    <string name="low_price_menu">Дешевый</string>
+    <string name="settings_menu">Пользовательский</string>
+
+    <!--MainActivity-->
+    <string name="tv_label_rv_main_a">Список мониторов</string>
+
+    <!--ItemRVMainActivity-->
+
+    <string name="tv_name_item_rv">Model name</string>
+    <string name="tv_cost_item_rv">Model cost</string>
+    <string name="tv_alg_score_item_rv">Model score</string>
+
+    <!--CustomIndexActivity-->
+
+    <string name="tv_label_custom_index_a">Ввидите вес критериев, который в совокупности должен быть равен 100</string>
+    <string name="tv_cost_custom_index_a">Цена</string>
+    <string name="tv_resolution_custom_index_a">Разрешение</string>
+    <string name="tv_diagonal_custom_index_a">Диагональ</string>
+    <string name="tv_max_frr_custom_index_a">Частота</string>
+    <string name="tv_market_score_custom_index_a">Рейтинг</string>
+    <string name="tv_type_matrix_custom_index_a">Матрица</string>
+    <string name="et_hint_custom_index_a">Введите вес критерия</string>
+    <string name="btn_apply_custom_index_a">Применить</string>
+
+
+    <!--RVItemActivity-->
+    <string name="tv_mode_name_rv_item_a">Название модели</string>
+    <string name="tv_mode_description_rv_item_a">Описание модели</string>
+    <string name="tv_label_cost_rv_item_a">Цена</string>
+    <string name="tv_label_type_matrix_rv_item_a">Тип матрицы</string>
+    <string name="tv_label_market_score_rv_item_a">Оценка Яндекс.Маркет</string>
+    <string name="tv_label_resolution_rv_item_a">Разрешение</string>
+    <string name="tv_label_max_frr_rv_item_a">Макс. частота</string>
+</resources>

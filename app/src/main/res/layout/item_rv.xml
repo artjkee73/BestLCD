@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="10dp"
+    card_view:cardElevation="5dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/image_view_item_rv"
+            android:layout_width="87dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@drawable/ic_no_image" />
+
+        <TextView
+            android:id="@+id/tv_name_item_rv"
+            android:layout_width="170dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_name_item_rv"
+            card_view:layout_constraintStart_toEndOf="@+id/image_view_item_rv"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_alg_score_item_rv"
+            android:layout_width="42dp"
+            android:layout_height="31dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_alg_score_item_rv"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_name_item_rv"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_cost_item_rv"
+            android:layout_width="128dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_cost_item_rv"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/image_view_item_rv"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_name_item_rv" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical">-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_name_item_rv"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="@string/tv_name_item_rv"-->
+        <!--android:textSize="8pt" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_cost_item_rv"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="@string/tv_cost_item_rv"-->
+        <!--android:textSize="8pt" />-->
+<!--</LinearLayout>-->
+
+
+<!--<TextView-->
+    <!--android:id="@+id/tv_alg_score_item_rv"-->
+    <!--android:layout_width="339dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="@string/tv_alg_score_item_rv" />-->
+<!--</LinearLayout>-->

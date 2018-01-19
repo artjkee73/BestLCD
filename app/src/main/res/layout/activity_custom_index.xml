@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.artemqa.bestlcd.ui.activity.CustomIndexActivity"
+    android:layout_margin="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_label_custom_index_a"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_cost_custom_index_a"
+            android:textSize="16sp"
+            android:paddingLeft="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/et_cost_custom_index_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_hint_custom_index_a"
+            android:textSize="16sp"
+            android:inputType="numberSigned"
+            android:maxLength="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_resolution_custom_index_a"
+            android:textSize="16sp"
+            android:paddingLeft="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/et_resolution_custom_index_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_hint_custom_index_a"
+            android:textSize="16sp"
+            android:inputType="numberSigned"
+            android:maxLength="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_diagonal_custom_index_a"
+            android:textSize="16sp"
+            android:paddingLeft="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/et_diagonal_custom_index_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_hint_custom_index_a"
+            android:textSize="16sp"
+            android:inputType="numberSigned"
+            android:maxLength="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_max_frr_custom_index_a"
+            android:textSize="16sp"
+            android:paddingLeft="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/et_max_frr_custom_index_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_hint_custom_index_a"
+            android:textSize="16sp"
+            android:inputType="numberSigned"
+            android:maxLength="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_market_score_custom_index_a"
+            android:textSize="16sp"
+            android:paddingLeft="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/et_market_score_custom_index_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_hint_custom_index_a"
+            android:textSize="16sp"
+            android:inputType="numberSigned"
+            android:maxLength="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_type_matrix_custom_index_a"
+            android:textSize="16sp"
+            android:paddingLeft="50dp"
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/et_type_matrix_custom_index_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_hint_custom_index_a"
+            android:textSize="16sp"
+            android:inputType="numberSigned"
+            android:maxLength="2"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_apply_custom_index_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_apply_custom_index_a"
+        android:layout_gravity="right"/>
+</LinearLayout>
