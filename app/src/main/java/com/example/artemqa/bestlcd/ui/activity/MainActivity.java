@@ -3,7 +3,6 @@ package com.example.artemqa.bestlcd.ui.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,25 +10,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.artemqa.bestlcd.R;
 import com.example.artemqa.bestlcd.model.Monitor;
 import com.example.artemqa.bestlcd.ui.adapter.MyRecyclerViewAdapter;
 import com.example.artemqa.bestlcd.util.Helper;
-
-import java.util.ArrayList;
-
-import io.realm.ObjectServerError;
 import io.realm.Realm;
-import io.realm.RealmResults;
 import io.realm.Sort;
-import io.realm.SyncConfiguration;
-import io.realm.SyncCredentials;
-import io.realm.SyncUser;
 
 
-public class MainActivity extends AppCompatActivity implements SyncUser.Callback<SyncUser> {
+public class MainActivity extends AppCompatActivity {
     Realm realm;
     MyRecyclerViewAdapter adapter;
     TextView tvLabelRv;
@@ -39,43 +29,18 @@ public class MainActivity extends AppCompatActivity implements SyncUser.Callback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setRealmSync();
         realm = Realm.getDefaultInstance();
         tvLabelRv = findViewById(R.id.tv_label_rv_main_a);
         recyclerView = findViewById(R.id.rv_main_a);
-        addItemsInRealm();
         setUpRecyclerView();
 
-    }
 
-    private void setRealmSync() {
-        SyncCredentials myCredentials;
-        if (SyncUser.currentUser() == null) {
-            myCredentials = SyncCredentials.usernamePassword(Helper.REALM_LOGIN, Helper.REALM_PASS, true);
-        } else {
-            myCredentials = SyncCredentials.usernamePassword(Helper.REALM_LOGIN, Helper.REALM_PASS, false);
-        }
-        SyncUser.loginAsync(myCredentials, Helper.REALM_AUTH, this);
     }
 
     private void setUpRecyclerView() {
         adapter = new MyRecyclerViewAdapter(realm.where(Monitor.class).sort("scoreAlgorithm", Sort.DESCENDING).findAll());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
-    }
-
-    private void addItemsInRealm() {
-        RealmResults<Monitor> results = realm.where(Monitor.class).findAll();
-        if (results.size() == 0) {
-            final ArrayList<Monitor> monitorsList = Helper.addItems();
-            realm.executeTransaction(new Realm.Transaction() {
-                @Override
-                public void execute(@NonNull Realm realm) {
-                    realm.insert(monitorsList);
-                }
-            });
-            Toast.makeText(this, "Это первый вход, мониторы добавлены", Toast.LENGTH_SHORT).show();
-        }
     }
 
     @Override
@@ -151,16 +116,4 @@ public class MainActivity extends AppCompatActivity implements SyncUser.Callback
         realm.close();
     }
 
-    @Override
-    public void onSuccess(SyncUser syncUser) {
-        SyncConfiguration config = new SyncConfiguration.Builder(syncUser, Helper.REALM_URL)
-                .build();
-        Realm.setDefaultConfiguration(config);
-        Toast.makeText(this, "Синхронизация удалась", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onError(ObjectServerError error) {
-
-    }
 }
