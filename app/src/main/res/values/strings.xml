@@ -38,4 +38,17 @@
     <string name="tv_label_market_score_rv_item_a">Оценка Яндекс.Маркет</string>
     <string name="tv_label_resolution_rv_item_a">Разрешение</string>
     <string name="tv_label_max_frr_rv_item_a">Макс. частота</string>
+    <string name="tv_label_diagonal_rv_item_a">Диагональ</string>
+    <string name="tv_label_linguistic_conclusion_rv_item_a">Лингвистический вывод</string>
+    <string name="tv_linguistic_conclusion_rv_item_a">Монитор %1$s является лучшим предложением исходя
+                                                        из выбранных критериев важности характеристик: %n
+                                                        Цена - %2$d %% %n
+                                                        Диагональ - %3$d %% %n
+                                                        Макс. частота - %4$d %% %n
+                                                        Тип матрицы - %5$d %% %n
+                                                        Разрешение - %6$d %% %n
+                                                        Оценка Яндекс.Маркет - %7$d %% %n
+                                                        Его стоимость на %8$.2f процентов %9$s, чем стоимость ближайщего конкурента %10$s,
+                                                        а разница в величине критерия Байеса-Лапласа на %11$.2f процентов %12$s .
+</string>
 </resources>

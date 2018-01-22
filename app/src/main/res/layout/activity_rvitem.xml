@@ -59,6 +59,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="8dp"
@@ -72,6 +73,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_label_cost_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -80,6 +82,7 @@
                     android:text="@string/tv_label_cost_rv_item_a" />
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_cost_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -94,6 +97,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_label_type_matrix_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -102,6 +106,7 @@
                     android:text="@string/tv_label_type_matrix_rv_item_a" />
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_type_matrix_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -116,6 +121,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_label_market_score_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -124,6 +130,7 @@
                     android:text="@string/tv_label_market_score_rv_item_a" />
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_market_score_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -138,6 +145,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_label_max_frr_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -146,6 +154,7 @@
                     android:text="@string/tv_label_max_frr_rv_item_a" />
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_max_frr_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -160,6 +169,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_label_resolution_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -168,10 +178,60 @@
                     android:text="@string/tv_label_resolution_rv_item_a" />
 
                 <TextView
+                    android:textSize="16sp"
                     android:id="@+id/tv_resolution_rv_item_a"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv_label_diagonal_rv_item_a"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="16dp"
+                    android:text="@string/tv_label_diagonal_rv_item_a" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv_diagonal_rv_item_a"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_linguistic_conclusion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_label_linguistic_conclusion_rv_item_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/tv_label_linguistic_conclusion_rv_item_a" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_linguistic_conclusion_rv_item_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
         </LinearLayout>

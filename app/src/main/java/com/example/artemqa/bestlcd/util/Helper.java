@@ -17,10 +17,10 @@ import io.realm.SyncConfiguration;
  */
 
 public class Helper {
-public static final String NAME_PREFERENCES = "PREF_MONITOR";
+    public static final String NAME_PREFERENCES = "PREF_MONITOR";
     public static final String PREF_COST_INDEX = "COST_INDEX";
     public static final String PREF_RESOLUTION_INDEX = "RESOLUTION_INDEX";
-    public static final String PREF_DIAGONAL_INDEX ="DIAGONAL_INDEX";
+    public static final String PREF_DIAGONAL_INDEX = "DIAGONAL_INDEX";
     public static final String PREF_MAX_FRR_INDEX = "MAX_FRR_INDEX";
     public static final String PREF_TYPE_MATRIX_INDEX = "TYPE_MATRIX_INDEX";
     public static final String PREF_SCORE_MARKET_INDEX = "SCORE_MARKET_INDEX";
@@ -30,10 +30,10 @@ public static final String NAME_PREFERENCES = "PREF_MONITOR";
     public static final String REALM_LOGIN = "bestlcduser";
     public static final String REALM_PASS = "12345678";
 
-    public static float convertDpToPixel(float dp, Context context){
+    public static float convertDpToPixel(float dp, Context context) {
         Resources resources = context.getResources();
         DisplayMetrics metrics = resources.getDisplayMetrics();
-        float px = dp * ((float)metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
+        float px = dp * ((float) metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
         return px;
     }
 

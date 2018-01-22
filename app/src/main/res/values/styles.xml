@@ -14,7 +14,7 @@
     </style>
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">26sp</item>
-        <item name="android:textColor">@color/colorCyanBlue</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">normal</item>
     </style>
 </resources>
